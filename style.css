@@ -9,6 +9,10 @@ header{
     padding: 0.2em;
     font-family: 'Roboto', sans-serif;
     border-bottom: 1px solid #242424;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
 }
 
 nav{
@@ -17,8 +21,7 @@ nav{
     justify-content: space-between;
     align-items: baseline;
     margin: 0 48px;
-    box-sizing: inherit;
-    
+    box-sizing: inherit;   
 
 }
 li{
@@ -29,7 +32,7 @@ li{
     font-size: 12pt;
 }
 
-li button{
+#button {
     background-color:black;
     border:none;
     color:white;
@@ -39,6 +42,29 @@ li button{
     height: 40px; 
     text-align: center;  
     font-size: 12pt; 
+}
+
+.fade-in {
+    opacity: 0.;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    70%{
+        opacity: 0.7 ;
+    }
+    100%{
+        opacity: 1 ;
+    }
 }
 
 .lista{
@@ -52,22 +78,22 @@ li button{
     font-family: 'Roboto', sans-serif;
     border-bottom: 1px solid #242424;
     display: flex;
-    padding-bottom: 0.1em;
 }
 
 .par{
     flex-direction: column;
     margin: 0 48px;
+    height: 40px;
 }
 
 h1{
     font-family: 'Spectral', serif;
     letter-spacing:  -0.055;
-    font-size: 75pt;
+    font-size: 5em;
     margin: 0;
     display: block;
     margin-bottom: 0.3em;
-    padding-top: 30px;
+    padding-top: 1em;
 
 }
 
@@ -85,19 +111,19 @@ h1{
     font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 0.3em;
 }
-.serieM{
+/*.serieM{
     justify-items: flex-end;
     margin: 0 48px;
     display: block;
     display: flex;
     width: 30rem;
     
-}
+}*/
 .inizio p{
     margin-bottom: 50px;
     font-size: 24px;
     line-height: 24px;
-    color: #242424;
+    color: #444444;
 }
 
 .start{
@@ -113,14 +139,14 @@ h1{
         font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.articoli{
+/*.articoli{
     padding-top: 40px;
     padding-bottom: 16px;
     display: block;
     border-bottom: 1px solid #a3a3a3;
     align-items: center;
-}
-.trending{
+}*/
+/*.trending{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -134,7 +160,86 @@ h1{
     flex-direction: row;
     margin: 0 48px;
     justify-content: space-between;
+}*/
+.trending{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 48px;
 }
+
+.trend{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    justify-content: center;
+    border-bottom: 1px solid rgb(218, 217, 217);
+    padding-bottom: 2em;
+
+}
+
+.trending img{
+    width: 25px;
+}
+.num{
+    color: gray;
+    font-size: 2rem;
+    opacity: 30%;
+    font-weight: bold;
+}
+
+.numAuthor{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.article{
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dateTime{
+    color: gray;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.8em;
+    font-family: 'Roboto', sans-serif;
+}
+.article, .dateTime{
+    margin-left: 3em;
+}
+.box{
+    justify-content: flex-start;
+    padding: 1em;
+    width: 30%;
+
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-left: -3em;
+    font-size: 0.8rem;
+}
+.author img{
+    padding-left: 4em;
+    width: 10%;
+}
+
+.author p{
+    padding-left: 1em;
+}
+
+.dateTime img{
+    margin-left: 0em;
+}
+
 
 .correlati{
     padding-top: 24px;
@@ -150,22 +255,6 @@ h1{
     font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.pulsanti{
-    flex-wrap: wrap;
-    display: flex;
-    align-items: flex-start;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-    background-color: #F2F2F2;
-    padding:1em;
-    border-radius: 2em;
-    text-align: center;  
-    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
-}
 
 aside{
     margin: 0 48px;
@@ -195,8 +284,25 @@ aside{
     width: 40%;
     padding: 1.5em;
 }
+
+.contenuto p{
+    color: grey;
+    padding-top: 0.5em;
+    flex-direction: column;
+}
+
+.contenuto button{
+    background-color: #F2F2F2;
+    border-radius: 2em;
+    border:none;
+    color:grey;
+    padding:0.5em;
+}
+.stella{
+    align-items: center;
+}
 .firstA{
-    padding: 2em;
+    padding-top: 3em;
 }
 
 
@@ -210,3 +316,25 @@ aside{
     width: 50%;
 
 }
+
+.pulsanti{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+}
+
+a{
+    text-decoration: none;
+    color:grey;
+    background-color: #F2F2F2;
+    padding:1em;
+    border-radius: 2em;
+    text-align: center;  
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+.altripulsanti{
+    color: grey;
+}
+
