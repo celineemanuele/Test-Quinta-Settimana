@@ -241,10 +241,9 @@ h1{
 }
 
 
-.correlati{
-    padding-top: 24px;
-    padding-bottom: 24px;
-    display:block;
+.partebassa{
+    display: flex;
+
 }
 
 .correlati h2{
@@ -280,8 +279,12 @@ aside{
     padding-left:1em;
 }
 
+.news{
+    display: flex;
+}
+
 .contenuto{
-    width: 40%;
+    width: 50%;
     padding: 1.5em;
 }
 
@@ -298,43 +301,45 @@ aside{
     color:grey;
     padding:0.5em;
 }
-.stella{
-    align-items: center;
-}
+
 .firstA{
     padding-top: 3em;
+    width: 45em;
 }
 
 
-.news{
-    flex-wrap: wrap;
+.imgN img{
+    width: 100%;
+}
+
+/*.correlati{
+    padding-top: 24px;
+    padding-bottom: 24px;
     display: flex;
-
-}
-
-.imgD{
-    width: 50%;
-
-}
+    flex-direction: column;
+}*/
+.correlati{
+    padding-top: 3em;
+    margin: 0 48px;
+} 
 
 .pulsanti{
-    flex-wrap: wrap;
-    display: flex;
-    align-items: flex-start;
+    padding: 1em;
+
 }
 
 a{
     text-decoration: none;
     color:grey;
     background-color: #F2F2F2;
-    padding:1em;
+    padding: 1em;
     border-radius: 2em;
     text-align: center;  
     font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
     
 }
 
-.altripulsanti{
+/*.altripulsanti{
     color: grey;
-}
+}*/
 
