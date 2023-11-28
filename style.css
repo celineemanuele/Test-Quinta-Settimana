@@ -243,15 +243,6 @@ h1{
 
 .partebassa{
     display: flex;
-
-}
-
-.correlati h2{
-    padding-bottom: 16px;
-    font-size: 16px;
-    color: black;
-    line-height: 20px;
-    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
@@ -259,8 +250,7 @@ aside{
     margin: 0 48px;
     line-height: 1.5em;
     font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 
 .tonde{
@@ -284,8 +274,9 @@ aside{
 }
 
 .contenuto{
-    width: 50%;
+    width: 100%;
     padding: 1.5em;
+    flex-wrap: wrap;
 }
 
 .contenuto p{
@@ -319,27 +310,44 @@ aside{
     flex-direction: column;
 }*/
 .correlati{
-    padding-top: 3em;
     margin: 0 48px;
+    font-family: 'Roboto', sans-serif;
+    padding: none;
+} 
+
+.correlati h3{
+    padding-top: 5em;
+    font-size: 13px;
+    color: black;
+    line-height: 20px;
 } 
 
 .pulsanti{
-    padding: 1em;
-
+    padding-bottom: 2em;
+    padding-top: 1em;
+    border-bottom: 1px solid rgb(199, 198, 198);
+}
+.pulsanti li{
+    padding-bottom:1em;
+    padding-left: 0em;
 }
 
 a{
     text-decoration: none;
     color:grey;
-    background-color: #F2F2F2;
-    padding: 1em;
-    border-radius: 2em;
+    border: 1px solid grey;
+    padding:0.5em;
     text-align: center;  
     font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
     
 }
 
-/*.altripulsanti{
+.altripulsanti{
+    padding-top: 1.5em;
+}
+
+.altripulsanti li{
     color: grey;
-}*/
+    padding:0.5em;
+}
 
